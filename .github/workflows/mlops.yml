@@ -2,7 +2,7 @@ name: MLOps Pipeline
 
 on:
   push:
-    branches: [main]
+    branches: [master]
     paths:
       - 'data/**.dvc'
       - 'src/**.py'
@@ -111,4 +111,4 @@ jobs:
           script: |
             sudo systemctl restart mlops-serve
             sleep 10
-            curl -sf http://localhost:8000/health && echo "Health check passed." || exit 1
+            curl -sf http://localhost:80/health && echo "Health check passed." || exit 1
