@@ -11,3 +11,50 @@ sa-key.json
 __pycache__/
 *.pyc
 .DS_Store
+*.pyc
+*.pyo
+*.pyd
+venv/
+
+# MLflow
+mlruns/
+mlartifacts/
+*.db
+
+# DVC
+.dvc/
+.dvcignore
+
+# AWS credentials
+sa-key.json
+*.json
+*.yml
+*.yaml
+.env
+.aws/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# pytest cache
+.pytest_cache/
+
+# PyCharm
+.idea/
+*.swp
+
+# Editor files
+*.swp
+*~
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# System files
+.DS_Store
+
+# Large data files - comment out nếu muốn push lên DVC thay vì Git
+# data/
